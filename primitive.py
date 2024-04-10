@@ -5,8 +5,8 @@ def arange(n: int):
     return np.array(range(n))
 
 
-def where(q, a, b):
-    return q * a + ~q * b
+def where(condition, a, b):
+    return condition * a + ~condition * b
 
 
 tensor = np.array
