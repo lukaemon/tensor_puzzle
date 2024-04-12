@@ -1,7 +1,7 @@
 ## Why
 Why twist and torture your brain like this? Because it's [fun and educational](https://twitter.com/karpathy/status/1778153659106533806). 
 
-# Context
+## Context
 Found professor Rush's repo, [srush/Tensor-Puzzles](https://github.com/srush/Tensor-Puzzles). It's useful because working with transformer has to deal with padding, attention mask, collate function and packing. Getting used to thinking in tensor helps. 
 
 I prefer mastering few universal primitives over memorizing many APIs, ex: `einsum`, `einops`. The hope is better readability and less bug by reducing the contact surface and keep things simple. The goal is learning fundamentals with practices of reducing high level tensor ops to core primitives. 
@@ -9,7 +9,7 @@ I prefer mastering few universal primitives over memorizing many APIs, ex: `eins
 Made few changes wrt [srush/Tensor-Puzzles](https://github.com/srush/Tensor-Puzzles) to better fit my preference:
 - Explicit example: easier to understand expected IO spec.
 - Explicit test case: easier to debug. 
-- Backend to numpy: doesn't matter since all reduce to basic ops. Numpy, pytorch, jax, mlx all work the same. 
+- Backend to numpy: doesn't matter since all reduce to basic ops. numpy, pytorch, jax, mlx all work the same. 
 - Change signature of few ops. 
 - [Shape suffix style](https://medium.com/@NoamShazeer/shape-suffixes-good-coding-style-f836e72e24fd): ex: `a_i` is an 1 dimension tensor `a` with the size `i`. 
 
